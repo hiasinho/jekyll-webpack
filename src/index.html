@@ -2,21 +2,195 @@
 layout: default
 ---
 
-<div class="o-wrapper">
-  <div class="remove-me">
-    <div class="remove-me__header">
-      <div class="remove-me__logo"></div>
+<header class="o-slide c-masthead" id="start">
+  <div class="o-slide__container">
+    <div class="c-masthead__content">
+      <h1 class="c-masthead__title">
+        <span class="u-text-light">Markus</span> Käser
+      </h1>
+      <h2 class="c-masthead__subtitle u-margin-bottom">
+        {{ site.subtitle }}
+      </h2>
+      <a href="https://youtu.be/srtm1nOjCog" class="c-masthead__play js-track-click" target="_blank"><i class="fa fa-youtube-play fa-3x"></i></a>
     </div>
-    <div class="remove-me__body">
-      <div class="o-layout o-layout--middle">
-        <div class="o-layout__item u-3/12@tablet u-3/12@desktop">
-          <img src="{{ site.baseurl }}assets/images/hiasinho.png" />
+  </div>
+
+  <div class="tv">
+    <div class="screen mute" id="tv"></div>
+  </div>
+
+
+  <a href="#intro" class="c-scroll"></a>
+</header>
+
+
+
+<div class="c-section t-dark u-padding-bottom-huge">
+  <div class="o-wrapperl">
+    <div class="o-layout o-layout--center">
+      <div class="o-layout__item u-10/12@tablet u-9/12@desktop u-6/12@wide">
+        <div class="c-letter animated pulse" id="intro">
+          <div class="c-letter__page">
+            <p>
+              Liebe Genossinnen,<br/>
+              liebe Genossen,
+            </p>
+
+            <p>
+              Walter Adam aus Abensberg hat mit seiner mutigen Kandidatur zum bayerischen Landesvorsitz 2015 in Hirschaid ein deutliches Zeichen gegen die lähmende Alternativlosigkeit in der SPD gesetzt und eine Bresche für die Basis geschlagen.
+            </p>
+
+            <p>
+              Ich war begeistert von der Energie, die mit der Kandidatur von Walter plötzlich wieder zu spüren war. Wie unzählige Sozialdemokratinnen und Sozialdemokraten aus ganz Bayern folgte ich seinem Impuls, wollte den Niedergang der BayernSPD nicht akzeptieren und begann den Neuanfang mit zu organisieren.
+            </p>
+
+            <p>
+              Nun haben wir die Urwahl durchgesetzt.<br/>Jetzt schreiben alle Mitglieder die Geschichte der bayerischen Sozialdemokratie selbst!
+            </p>
+
+            <p>
+              60.000 Mitglieder in ganz Bayern, die alle dabei sind, weil sie bestehende Verhältnisse nicht einfach hinnehmen, sondern stetig zum Besseren verändern wollen. Das gilt für unsere Gesellschaft, aber auch für die SPD selbst.
+            </p>
+
+            <p>
+              Und wer konsequent den Neuanfang fordert, der muss auch bereit sein mit anzupacken.
+            </p>
+
+            <p>
+              Ich will deshalb selbst die Alternative anbieten, die ich gefordert habe und anschieben, dass die bayerische SPD wieder zu dem werden kann, was 60.000 bayerische Sozialdemokratinnen und Sozialdemokraten verdient haben: Zu einer lebendigen Mitgliederpartei und zu einer ernstzunehmenden politischen Alternative in Bayern.
+            </p>
+
+            <p>
+              Echter Neuanfang geht nur von unten.<br/>
+              Darum kandidiere ich.
+            </p>
+
+            <p>
+              Aloha
+            </p>
+
+            <p>
+              <a href="{{ site.baseurl }}{% link ueber.html %}">Markus Käser</a><br/>
+              P.S.: Täglich aktuelle Infos gibts auf meiner Facebookseite <a href="https://www.facebook.com/kaeserwaehlen">@kaeserwaehlen.</a> 
+            </p>
+          </div>
+          <div class="c-letter__page"></div>
+          <div class="c-letter__page"></div>
         </div>
 
-        <div class="o-layout__item u-9/12@tablet u-9/12@desktop u-align-left@tablet">
-          <h1>Congrats! You just started your first project with Jekyll and Webpack</h1>
-        </div>
       </div>
+    </div>
+  </div>
+</div>
+
+<section class="c-section t-dark">
+  <div class="c-section__heading o-layout o-layout--middle">
+    <div class="o-layout__item">
+      <h2 class="c-section__title js-top-in">
+        Markus Käser zum Landes&shy;vor&shy;sitzenden wählen,<br/>
+        <span class="js-bottom-in">bedeutet:</span>
+      </h2>
+    </div>
+
+    <div class="o-layout__item u-8/12@tablet u-7/12@desktop">
+      <p class="c-section__subtitle js-bottom-in">
+        Glaubhafter <strong>Neuanfang</strong>, alle Macht den Mitgliedern, <strong>Belebungsgarantie</strong> mit kommunaler Praxiserfahrung und <strong>Standfestigkeit</strong> beim Einsatz für sozialdemokratische Werte!
+      </p>
+    </div>
+  </div>
+
+  <div class="o-wrapper js-track-visible" data-track-category="Page" data-track-action="scroll" data-track-label="About">
+    <div class="c-section__heading o-layout o-layout--middle">
+      {% for item in site.data.imagine %}
+        <div class="o-layout__item u-4/12@tablet">
+          <div class="c-circle u-margin-bottom js-there-is-more js-bottom-in js-track-click" data-track-label="{{ item.title }}">
+            <div class="c-circle__number">{{ item.number }}</div>
+            <div class="c-circle__title">
+              {{ item.title }}
+            </div>
+          </div>
+          <div class="c-modal js-modal">
+            <div class="c-modal__close js-close">&times;</div>
+            <div class="c-modal__body">
+              <div class="o-layout o-layout--center o-layout--middle">
+                <div class="o-layout__item u-8/12@tablet u-6/12@desktop">
+                  <h2>{{ item.title }}</h2>
+                  {{ item.body }}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<div class="c-section t-dark" id="einsatz">
+  <div class="c-section__heading o-layout o-layout--middle">
+    <div class="o-layout__item">
+      <h2 class="c-section__title js-bottom-in">
+        Einsatz
+      </h2>
+    </div>
+
+    <div class="o-layout__item u-8/12@tablet u-7/12@desktop">
+      <p class="c-section__subtitle js-bottom-in">
+        Politik hat für mich eine ganz einfache Bedeutung: <strong>mitzuhelfen</strong>, eine gute und friedliche Gesellschaft zu <strong>organisieren</strong>, das Glück seiner <strong>Mitbürger</strong> zu erhöhen und <strong>die Welt ein bisschen besser zu machen</strong>.
+        <br/><br/>
+        Hier eine Auswahl von <strong>gesellschaftlichen Projekten</strong>, Initiativen und Organisationen an deren <strong>Konzeption und Durchführung</strong> ich <strong>federführend</strong> beteiligt war.
+      </p>
+    </div>
+  </div>
+
+  <div class="o-layout o-layout--middle js-track-visible" data-track-category="Page" data-track-action="scroll" data-track-label="Projects">
+    {% for project in site.data.projects %}
+      <div class="o-layout__item u-6/12@tablet u-4/12@desktop">
+        <a class="c-project js-bottom-in{% if project.body %} js-there-is-more{% endif %} js-track-click" {% if project.url %}href="{{ project.url }}" {% endif %}target="_blank">
+          <div class="c-project__image" style="background-image: url('{{ site.baseurl }}assets/images/{{ project.image }}')"></div>
+          <h2 class="c-project__title">
+            {{ project.title }}
+          </h2>
+        </a>
+        {% if project.body %}
+        <div class="c-modal js-modal">
+          <div class="c-modal__close js-close">&times;</div>
+          <div class="c-modal__body">
+            <div class="o-layout o-layout--center o-layout--middle">
+              <div class="o-layout__item u-8/12@tablet u-6/12@desktop">
+                <h2>{{ project.title }}</h2>
+                {{ project.body }}
+              </div>
+            </div>
+          </div>
+        </div>
+        {% endif %}
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+<div class="c-section t-dark u-padding-top-huge u-padding-bottom-huge">
+  <div class="o-wrapper">
+    <div class="c-section__heading">
+      <h2 class="c-section__title js-top-in">
+        Hilf uns beim Neu&shy;anfang 
+      </h2>
+      <h3 class="c-section__subtitle js-top-in">
+        Wenn Du bis zum 02. April eintrittst, kannst Du noch mitwählen!<br/>
+        <a href="https://bayernspd.de/presse/pressemitteilungen/?id=350025"> Infos zum Mitgliedervotum.</a>
+      </h3>
+    </div>
+
+    <div class="u-align-center">
+      <a href="https://mitgliedwerden.spd.de/eintritt" class="c-btn c-btn--primary u-margin-bottom-small" target="_blank">Jetzt eintreten</a>
+      <p>
+        Hast du noch Fragen? <a href="#" class="js-smooch-open">Schreib mir einfach kurz</a>.
+      </p>
     </div>
   </div>
 </div>
