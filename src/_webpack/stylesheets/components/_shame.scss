@@ -50,6 +50,7 @@
   .c-circle__title {
     font-weight: 300;
     @include inuit-font-size($inuit-font-size-h3);
+    line-height: 1.25;
     padding: 0 14.86%;
     position: absolute;
     top: 50%;
