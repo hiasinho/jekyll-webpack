@@ -40,6 +40,7 @@
 @import "~inuitcss/elements/elements.headings";
 @import "~inuitcss/elements/elements.images";
 @import "~inuitcss/elements/elements.tables";
+@import "elements/forms";
 
 
 
@@ -60,6 +61,7 @@
 @import "~inuitcss/objects/objects.crop";
 @import "~inuitcss/objects/objects.table";
 @import "~inuitcss/objects/objects.pack";
+@import "objects/slide";
 
 
 
@@ -68,8 +70,25 @@
 // COMPONENTS
 //
 // Build and include your project’s UI Compoments here.
-@import "~inuitcss/components/example.components.buttons";
-@import "components/remove-me";
+@import "components/buttons";
+@import "components/masthead";
+@import "components/nav";
+@import "components/section";
+@import "components/projects";
+@import "components/social-list";
+@import "components/curl";
+@import "components/modal";
+@import "components/shame";
+
+
+
+
+
+// THEMES
+@import "themes/primary";
+@import "themes/light";
+@import "themes/dark";
+@import "themes/red";
 
 
 
@@ -86,3 +105,4 @@ $inuit-fractions: 1 12;
 @import "~inuitcss/utilities/utilities.print";
 @import "~inuitcss/utilities/utilities.hide";
 @import "utilities/aligns";
+@import "utilities/paint";

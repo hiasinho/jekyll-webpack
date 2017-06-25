@@ -1,0 +1,37 @@
+.c-masthead {
+  background-color: $global-primary-color;
+  background-image: url('~images/cover.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+
+  @include mq(desktop) {
+    background-position: right center;
+  }
+}
+
+  .c-masthead__content {
+    text-align: center;
+  }
+
+  .c-masthead__title {
+    @include inuit-font-size(72px);
+    color: white;
+    margin: 0;
+    border: 5px solid white;
+    padding: 16px 18px;
+    text-transform: uppercase;
+  }
+
+  .c-masthead__subtitle {
+    color: white;
+    margin: 0;
+  }
+
+  .c-masthead__play {
+    color: white;
+
+    &:hover {
+      color: rgba(white, 0.8);
+    }
+  }
